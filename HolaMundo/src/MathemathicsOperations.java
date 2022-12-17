@@ -1,7 +1,7 @@
 public class MathemathicsOperations {
     public static void main(String[] args) {
         double x = 5;
-        double y = 4;
+        double y = 3;
         //Returns una parte entera hacia arriba de un tipo de dato numerico, en este caso //3.0
         System.out.println(Math.ceil(x));
 
@@ -15,7 +15,7 @@ public class MathemathicsOperations {
         System.out.println(Math.max(x,y)); //3
 
         //Devolver la raiz cuadrada.
-        System.out.println(Math.sqrt(y)); //2
+        System.out.println((int) Math.sqrt(y)); //2
 
         //Devolver el area de un circulo.
         System.out.println(Math.PI * Math.pow(y, 2)); //50
