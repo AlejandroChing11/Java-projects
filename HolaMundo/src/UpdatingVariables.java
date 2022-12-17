@@ -10,5 +10,12 @@ public class UpdatingVariables {
         //2 extra hours and food
         salary = salary + (30*2) - 30;
         System.out.println(salary);
+
+        //Updating strings
+        String name = "Alejandro Ching";
+        name = name + " Franco";
+        System.out.println("Tu nombre es: " + name);
+
+
     }
 }
