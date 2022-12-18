@@ -12,6 +12,8 @@ public class Functions {
         double volume = shpereVolume(y);
         System.out.println(volume);
 
+        System.out.println("Pesos a dolares: " + converToDollar(10000000, "MXN"));
+
     }
     public static double circleArea(double r) {
         return Math.PI * Math.pow(r, 2);
@@ -22,5 +24,19 @@ public class Functions {
 
     public static double shpereVolume(double r) {
         return (4/3) * Math.PI * Math.pow(r ,3);
+    }
+
+    public static double converToDollar(double quantity, String currency) {
+        switch (currency) {
+            case "MXN":
+                quantity = quantity * 0.051;
+                break;
+            case "COP":
+                quantity = quantity * 0.00021;
+                break;
+            default:
+                System.out.println("Ingrese una currency valida");
+        }
+        return quantity;
     }
 }
