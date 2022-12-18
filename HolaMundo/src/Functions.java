@@ -22,11 +22,25 @@ public class Functions {
         return 4 * Math.PI * Math.pow(r, 2);
     }
 
+    /**
+     * Description: Function that recieve a parameter and use the official form.
+     * @param r Is the Radio of the shepere.
+     * @return Volume
+     */
     public static double shpereVolume(double r) {
         return (4/3) * Math.PI * Math.pow(r ,3);
     }
 
+    /**
+     * Descripcion: Función que especificando su moneda, convierte la cantidad a dolares.
+     *
+     * @param quantity Cantidad de dinero
+     * @param currency Tipo de moneda: Solo acepta MXN y COP
+     * @return quantity Devuelve la cantidad actualizada en dolares
+     *
+     * */
     public static double converToDollar(double quantity, String currency) {
+
         switch (currency) {
             case "MXN":
                 quantity = quantity * 0.051;
