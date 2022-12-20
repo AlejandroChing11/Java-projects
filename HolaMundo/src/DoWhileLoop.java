@@ -13,7 +13,7 @@ public class DoWhileLoop {
             response = Integer.valueOf(sc.nextLine());
 
             switch (response) {
-                case 0:
+                case 3:
                     System.out.println("Gracias por visitar");
                     break;
                 case 1:
@@ -25,6 +25,7 @@ public class DoWhileLoop {
                 default:
                     System.out.println("Selecciona una opcion correcta por favor");
             }
-        } while (reponse != 0);
+        } while (response != 3);
+        System.out.println("La ejecucion termino terminó");
     }
 }
