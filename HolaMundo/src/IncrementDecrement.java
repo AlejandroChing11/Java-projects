@@ -13,5 +13,10 @@ public class IncrementDecrement {
         int gift = 100 + ++lives; //Prefijo
         System.out.println(gift);
         System.out.println(lives);
+
+        int i = 7;
+        char c = 'W';
+        System.out.println((i >= 6) && (c == 'w'));
+
     }
 }
