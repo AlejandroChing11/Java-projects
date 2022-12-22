@@ -18,5 +18,14 @@ public class IncrementDecrement {
         char c = 'W';
         System.out.println((i >= 6) && (c == 'w'));
 
+        int x = 1;
+        while (x <= 10) {
+            System.out.println(++x);
+        }
+        byte y = 1;
+        byte z = 1;
+        byte k = y + z;
+        System.out.println(k);
+
     }
 }
